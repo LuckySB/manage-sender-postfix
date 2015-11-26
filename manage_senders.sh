@@ -8,9 +8,10 @@ function show_help {
  echo "Usage $0 -s|--slave all|list of server -c|--command command_string"
  echo "  command_string: "
  echo "       start | stop | restart | status"
- echo "       remove_to all|queue name(active|deferred|bounce|hold|incoming) [recipient domen]"
- echo "       remove_from all|queue name(active|deferred|bounce|hold|incoming) [recipient domen]"
- echo "       remove_camp all|queue name(active|deferred|bounce|hold|incoming) [recipient domen]"
+ echo "       remove_all all|queue name(active|deferred|bounce|hold|incoming)"
+ echo "       remove_to all|queue name(active|deferred|bounce|hold|incoming) recipient domen"
+ echo "       remove_from all|queue name(active|deferred|bounce|hold|incoming) sender domen"
+ echo "       remove_camp all|queue name(active|deferred|bounce|hold|incoming) camp id"
 }
 
 function do_server {
